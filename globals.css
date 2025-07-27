@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+}
+
+.adjustLetterSpacing {
+  letter-spacing: -3%;
+}
+
+/* Custom background colors */
+.bg-f2f2f2 {
+  background-color: #f2f2f2;
+}
+
+.bg-f1f1f1 {
+  background-color: #f1f1f1;
+}
+
+.bg-cfcfcf {
+  background-color: #cfcfcf;
+}
+
+/* Custom text colors */
+.text-474747 {
+  color: #474747;
+}
+
+/* Button hover states */
+.btn-hover:hover {
+  background-color: #cfcfcf !important;
+}
+
+.btn-active:active,
+.btn-active:focus {
+  background-color: #cfcfcf !important;
+}
+
+/* Font weight override for desktop - exclude section headers */
+@media (min-width: 1024px) {
+  *:not(.section-header-text) {
+    font-weight: 300 !important;
+  }
+  
+  /* Section headers should be bold */
+  .section-header-text {
+    font-weight: 700 !important;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  }
+}
